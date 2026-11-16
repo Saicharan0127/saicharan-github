@@ -1,0 +1,214 @@
+.projects-section {
+  position: relative;
+  z-index: 2;
+}
+
+/* Central GitHub Showcase Hub */
+.github-showcase-hub {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3.5rem 3rem;
+  text-align: center;
+  position: relative;
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(24, 24, 56, 0.65));
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 35px rgba(99, 102, 241, 0.2);
+}
+
+@media (max-width: 640px) {
+  .github-showcase-hub {
+    padding: 2.25rem 1.5rem;
+  }
+}
+
+.hub-glow-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--gradient-primary);
+}
+
+.hub-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Top Row */
+.hub-top-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.hub-github-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.9);
+  border: 2px solid rgba(99, 102, 241, 0.4);
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.35);
+  color: #ffffff;
+  transition: transform var(--transition-fast);
+}
+
+.github-showcase-hub:hover .hub-github-icon-box {
+  transform: scale(1.08) rotate(4deg);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.45);
+}
+
+.hub-profile-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.hub-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.25rem 0.8rem;
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #34d399;
+}
+
+.hub-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.hub-profile-handle {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+}
+
+/* Headings */
+.hub-heading {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 768px) {
+  .hub-heading {
+    font-size: 1.95rem;
+  }
+}
+
+.hub-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
+
+/* Tech Tags */
+.hub-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-bottom: 2.25rem;
+}
+
+.hub-tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-light);
+  font-size: 0.82rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.hub-tech-pill:hover {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: var(--pill-color, var(--accent-cyan));
+  transform: translateY(-2px);
+}
+
+.pill-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+/* Actions */
+.hub-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.hub-cta-btn {
+  padding: 0.95rem 2.2rem;
+  font-size: 1.05rem;
+  gap: 0.65rem;
+}
+
+.hub-arrow-icon {
+  opacity: 0.8;
+  transition: transform var(--transition-fast);
+}
+
+.hub-cta-btn:hover .hub-arrow-icon {
+  transform: translate(3px, -3px);
+  opacity: 1;
+}
+
+.hub-secondary-btn {
+  padding: 0.95rem 1.85rem;
+  font-size: 0.95rem;
+}
+
+/* Footer Strip */
+.hub-footer-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border-light);
+  width: 100%;
+}
+
+.hub-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.feature-check-icon {
+  color: var(--accent-cyan);
+}
