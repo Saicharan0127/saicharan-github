@@ -141,6 +141,17 @@ All personal information is isolated in [src/data/portfolioData.js](file:///d:/4
 
 ---
 
+## 🌐 Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Saicharan0127/saicharan-github)
+
+1. Click the **Deploy with Vercel** button above or navigate to [https://vercel.com/new](https://vercel.com/new).
+2. Select your repository: **`Saicharan0127/saicharan-github`**.
+3. Vercel automatically detects the Vite configuration using `vercel.json`.
+4. Click **Deploy** to launch your live personal developer portfolio!
+
+---
+
 ## 📦 Building for Production
 
 To create an optimized production build:
